@@ -3,107 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>burger project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
 <style>
-  @font-face{
-	src: url('../fonts/SuperbaBold Roman.ttf');
-	font-family: 'SuperbaBold';
-}
+                @font-face {
+                font-family: 'aachen'; 
+                src: url('./FoodLover/fonts/Aachen\ Std\ Medium.otf'); }
+            
+            body{
+                font-family: aachen;
+            }
 
-.font{
-  font-weight:bold;
-}
-
-.active{
-color:rgb(15, 8, 8)!important;
-}
-
-.bg-pic{
-        background: url(Burger/images/background.png) no-repeat;
+    header{
+        background: linear-gradient(0deg, rgba(35, 35, 41,0.8), rgba(35, 35, 41,0.8)), url('./FoodLover/images/headerBackground.png') no-repeat;
                 background-size: cover;
-
-}
-.bg-pic2{
-  width: auto;
-  height: 700px;
-  background: url('./Burger/images/BurgerImage3.png') no-repeat;
+    }
+    .pic1{
+        background: linear-gradient(0deg, rgba(35, 35, 41,0.8), rgba(35, 35, 41,0.8)), url('./FoodLover/images/background02.png') no-repeat;
                 background-size: cover;
-}
-.heading1{
-  font-size: 8vw;
-	font-family: 'SuperbaBold';
-	color: #3d2210;
-	text-shadow: 3px 3px #ffffff;
- 
-}
-.heading2{
-  font-size: 3vw;
-	font-family: 'SuperbaBold';
-	text-shadow: 3px 3px #ffffff;
+    }
 
-}
-.heading3{
-  font-size: 3vw;
-	font-family: 'Superba';
-}
-.border1-fluid{
-border-color: #3d2210;
-  border-style: dashed;
-  width: 550px;
-  height: 60px;
- margin-left: 120px;
-border-width: 5px;
+    h1{
+        font-size: 60px;
+    }
+   p{
+        font-weight: 500;
+    }
+    .pic{
+        transition: 0.3s;
+        transition: transform .2s;
+    }
+    .pic:hover{
+        opacity: 0.7;
+        transform: scale(0.9);
+    }
 
-}
-.image1{
-  position: relative;
-  color: white;
-  font-family: 'Superba';
-}
-.text1{
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-.pic-text{
-  color: #3d2210;
-}
-.frm{
-  padding: 50px;
-}
-
-.image2{
-  position: relative;
-  color: white;
-  /* font-family: 'Superba'; */
-}
-.text2{
-  position: absolute;
-  top: 20px;
-  left: 50px;
-}
-.img-size{
-  width: auto;
-  height: 715px;
-}
-/* .bg-header{
-  background: url('./Burger/images/BurgerImage3.png') no-repeat;
-                background-size: cover;
-} */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 100px;
-  color: rgb(223, 17, 17);
-}
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
 
 </style>
 
@@ -112,307 +48,246 @@ border-width: 5px;
   </head>
   <body>
 
-
   <nav class="container-fluid">
-    <div class="row align-items-center justify-content-center p-3  bg-pic">
+    <div class="row align-items-center justify-content-center p-3  bg-dark">
+        <div class="col-md-4 text-center py-1">
 
-      <div class="col-md-3 text-center pt-4">
-        <img src="Burger/images/logo.png" height="60px">
-
-    </div>
-        <div class="col-md-5">
+            <a class="px-3 text-decoration-none text-light active" href="#">Home</a>
+            <a class="px-3 text-decoration-none text-light " href="#">About</a>
+            <a class="px-3 text-decoration-none text-light " href="#">Menus</a>
+            <a class="px-3 text-decoration-none text-light " href="#">Offers</a>
 
         </div>
+        <div class="col-md-4 text-center py-1 ">
+            <img src="FoodLover/images/logo.png" height="60px">
 
-        <div class="font col-md-4 text-center py-1">
+        </div>
+        <div class="col-md-4 text-center py-1">
 
-          <div class="row pb-4">
-            <div class="col-md-12 ms-5">
-              <h4> Expess delivery+123456789</h4>
-
-            </div>
-
-          </div>
-
-            <a class="px-3 text-decoration-none text-light active " href="#">Home</a>
-            <a class="px-3 text-decoration-none text-light active ps-5 " href="#">About</a>
-            <a class="px-3 text-decoration-none text-light active ps-5 " href="#">Menus</a>
-            <a class="px-3 text-decoration-none text-light active ps-5 " href="#">Offers</a>
-
-
+            <a class="px-3 text-decoration-none text-light active" href="#">Home</a>
+            <a class="px-3 text-decoration-none text-light " href="#">About</a>
+            <a class="px-3 text-decoration-none text-light " href="#">Menus</a>
+            <a class="px-3 text-decoration-none text-light " href="#">Offers</a>
         </div>
 
     </div>
 
   </nav>
 
-  <header class="container-fluid  ">
-
-      <div class="row align-items-center text-center bg-pic">
-        <div class="col-md-5">
-
-            <div class="row">
-              <div class="col-md-12">
-                <H5 class="border1-fluid">IT IS A GOOD TIME FOR THE GRATE TEAT OF BURGERS</h5>
-              </div>
-
-            </div>
-          
-
-   
-
-          <h1 class="heading1">BURGER</h1>
-          <h1 class="heading1">WEEK</h1>
-        </div>
-        <div class="col-2">
+  <header class="container-fluid">
+    <div class="row p-5 align-items-center">
+        <div class="col-md-6">
+            <img class="img-fluid" src="FoodLover/images/header.png" alt="">
 
         </div>
-
         <div class="col-md-4">
-          <img class="img-fluid" src="Burger/images/header.png" alt="">
+            <h1 class="text-warning">Contact Us For Best Breakfast</h1>
+            <p class="py-3 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, consequatur eaque in dolor 
+                omnis architecto numquam libero earum non a nesciunt repellendus laboriosam quia officia dolore eum perferendis recusandae. Corporis?</p>
+
+            <button class="btn btn-warning btn-lg">Contact Us</button>
         </div>
 
-      </div>
+    </div>
 
   </header>
 
-<div class="row p-5 ms-5">
-  <!-- ----------------------image 1------------- -->
-  <div class=" image1 col-6">
-    <img class="img-fluid" src="Burger/images/BurgerImage1.png" alt="">
-    <div class="text1">
-      <h5>TRY IT TODAY</h5>
-      <h3>MOST POPULARY BURGER</h3>
-    </div>
-
-  </div>
-<!-- ----------------------image 2------------- -->
-  <div class="col-6 image1">
-    <img class="img-fluid" src="Burger/images/BurgerImage2.png" alt="">
-
-    <div class="text1">
-      <!-- <h6>TRY IT TODAY</h6>
-      <h3>MORE FUN</h3>
-      <h3>MORE TESTE</h3> -->
-
-      <p class="fs-6 "> TRY IT TODAY </p>
-      <p class="fs-3"> MORE FUN <br>
-      MORE TESTE</p>
-
+<div class=" pic1 row bg-dark p-5 align-items-center">
+    <div class="col-md-6">
+        <img class="img-fluid" src="FoodLover/images/Section1.png" alt="">
 
     </div>
-<!-- --------row 02------ -->
-    <div class="row pt-4">
-      <!-- ----------------------image 3------------- -->
-      <div class="col image1">
-        <img class="img-fluid" src="Burger/images/BurgerImage3.png" alt="">
-        <div class="text1">
-          <h6>TRY IT TODAY</h6>
-          <h3>FIRSH & CHILI</h3>
-        </div>
-
-      </div>
+    <div class="col-md-4  pt-5">
+        <h1 class="text-light">About Us</h1>
+        <p class="py-3 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, consequatur eaque in dolor 
+            omnis architecto numquam libero earum non a nesciunt repellendus laboriosam quia officia dolore eum perferendis recusandae. Corporis?</p>
 
     </div>
 
-  </div>
-
 </div>
 
-<div class="row">
+<div class=" row bg-warning p-5 align-items-center">
 
-  <div class="col-5">
-    
+    <div class="col-md-5 text-center">
+        <h1 class="text-light">About Us</h1>
+        <p class="py-3 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, consequatur eaque in dolor 
+            omnis architecto numquam libero earum non a nesciunt repellendus laboriosam quia officia dolore eum perferendis recusandae. Corporis?</p>
 
-  </div>
-  <div class="col-2  bg-warning text-center">
-    <!-- <h6>ALWAYS TESTY BURGER</h6> -->
-    <button type="button" class="btn btn-warning">ALWAYS TESTY BURGER</button>
+    </div>
+    <div class="col-md-4">
 
-  </div>
-  <div class="col-5">
-  
+    </div>
+    <div class="col-md-3">
+        <img class="img-fluid ms-5" src="FoodLover/images/Section2.png" alt="">
 
-  </div>
-
-</div>
-
-<div class="row pt-4">
-
-  <div class="col-4">
-    
-
-  </div>
-  <div class="col-md-4 text-center">
-    <h1 class="heading2">CHOOSE & ENJOY</h1>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem explicabo adipisci nisi voluptate autem sequi eaque pariatur incidunt nemo harum vero
-       blanditiis illo est et soluta accusamus, velit quam.</P>
-
-  </div>
-  <div class="col-4">
-  
-
-  </div>
-
-</div>
-
-
-<Div class="row">
-  <div class="col-4">
-    <img class="img-fluid" src="Burger/images/zz.jpg " alt="">
-    <h1 class=" pic-text text-center fw-bold">LOREM IPSUM DOLOR</h1>
-    <P class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Necessitatibus suscipit quibusdam qui,
-       ipsa</P>
-       <div class="button text-center">
-        <button type="button" class="btn btn-danger ms-5 fw-bold">ALWAYS TESTY BURGER</button>
-       </div>
-       
-
-  </div>
-  <div class="col-4 ps-">
-    <img class="img-fluid" src="Burger/images/zz.jpg" alt="">
-    <h1 class=" pic-text text-center fw-bold">LOREM IPSUM DOLOR</h1>
-    <P class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Necessitatibus suscipit quibusdam qui,
-       ipsa</P>
-       <div class="button text-center">
-        <button type="button" class="btn btn-danger ms-5 fw-bold">ALWAYS TESTY BURGER</button>
-       </div>
-
-  </div>
-  <div class="col-4 ps-">
-    <img class="img-fluid" src="Burger/images/zz.jpg" alt="">
-    <h1 class="pic-text text-center fw-bold">LOREM IPSUM DOLOR</h1>
-    <P class="text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Necessitatibus suscipit quibusdam qui,
-       ipsa</P>
-       <div class="button text-center">
-        <button type="button" class="btn btn-danger ms-5 fw-bold">ALWAYS TESTY BURGER </button>
-       </div>
-
-  </div>
-
-</Div>
-
-<div class="row mt-5 pt-5">
-  <div class="col-md-4 text-center">
-
-     <p class="text-start ms-5 fw-bold ">DISCOVER </p>
-
-     <H1 class="heading2">UPCOMING EVENTS</H1>
-     <P class="text-start ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolor. Mollitia nesciunt id molestiae maxime commodi 
-      voluptate qui sit, ducimus, at magni temporibus soluta nam corrupti est aliquam accusantium? Accusantium?</P>
-
-  </div>
-
-  <DIV class="col-2">
-
-
-  </DIV>
-
-  <DIV class="col-6">
-
-    <img src="Burger/images/BurgerImage1.png" alt="">
-
-  </DIV>
-
-</div>
-
-<div class="row pt-5 mt-5">
-  <div class="col-4">
-
-  </div>
-  <div class="col-md-4">
-    <p class="heading2 fs-1">BOOK YOUR TABLE </p>
-    <form action="#" method="post">
-      <table>
-          <tr>
-              <td class="" style="padding: 10px;">
-                  
-                  <input placeholder="Name" type="text" id="name1" name="name1">
-              </td>
-              <td style="padding: 10px;">
-                 
-                  <input placeholder="Email" type="text" id="age1" name="age1">
-              </td>
-          </tr>
-          <tr>
-              <td style="padding: 10px;">
-                  
-                  <input placeholder="Date" type="text" id="name2" name="name2">
-              </td>
-              <td style="padding: 10px;">
-                
-                  <input placeholder="Time" type="text" id="age2" name="age2">
-              </td>
-          </tr>
-          <tr>
-              <td style="padding: 10px;">
-                 
-                  <input placeholder="People" type="text" id="name3" name="name3">
-              </td>
-              <td style="padding: 10px;">
-                <button  type="button" class="btn btn-danger">Danger</button>
-                 
-              </td>
-          </tr>
-      </table>
-    </form>
-
- </div>
-</div>
-
-
-
-<div class="row  mt-5 pt-5">
-  <div class=" image2 col">
-    <img class="img-size img-fluid" src="Burger/images/BurgerImage3.png" alt="">
-
-    <div class="text2 row align-items-center mt-5 pt-5 ms-5">
-      <div class="col-md-4 pt-5">
-
-        <h3> BURGER HOUSE</h3>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum autem ut aut. Illo,
-           a repellat deleniti reiciendis dolorem earum nesciunt vel et tempore laborum voluptate. Accusamus
-            aliquam repellat nulla voluptatibus.</P>
-      </div>
-
-      <div class="col-5">
-
-      </div>
-
-      <div class="col-md-3">
-
-        <P class="fs-5">
-          
-          Village Sheikh Umad Kohna Kasur
-        </P>
-        <p class="fs-5">
-          Abbas.patwari143gmail.com
-        </p>
-      </div>
     </div>
 
 
-    <div class="bottom-left ms-5 mb-2"> COMPANY NAME 2011.All RIGHTS RESERVED</div>
-    <div class="bottom-right"> facebook instagram icons </div>
-      
-  </div>
+</div>
 
+<div class="row bg-dark p-5">
+    <div class="col-md-4">
+        <img class="img-fluid" src="FoodLover/images/enjoy_best_meal.png" alt="">
 
+    </div>
+    <div class="col-md-3">
 
+    </div>
 
+    <div class="col-md-5 ">
+        <img class="img-fluid" src="FoodLover/images/Section3.png" alt="">
 
+    </div>
 
+</div>
+<div class="row bg-dark">
+    <div class="col-md-12 text-center">
+        <h1 class="text-light"> Our Food Gallery</h1>
+    </div>
 
+</div>
+<div class="row bg-dark p-3">
+    <div class="pic col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/1.png" alt="">
+
+    </div>
+    <div class=" pic col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/2.png" alt="">
+
+    </div>
+    <div class="pic col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/3.png" alt="">
+
+    </div>
+    <div class="pic col-4 p-3">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/4.png" alt="">
+
+    </div>
+    <div class="pic col-4 p-3">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/5.png" alt="">
+
+    </div>
+    <div class="pic col-4 p-3">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/6.png" alt="">
+
+    </div>
 
 </div>
 
-<div class="row bg-header">
-  <div class="col-3 ms-5">
-   
+<div class="row bg-dark">
+    <div class="col-md-12 ms-4 ">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/enjoy_food.png" alt="">
 
-  </div>
+    </div>
 
 </div>
+
+<div class="row bg-dark text-center">
+    <div class="col">
+        <h1 class="text-light">Our Manu</h1>
+
+    </div>
+
+</div>
+
+
+<div class="row bg-dark p-5">
+    <div class="col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/4.png" alt="">
+        <h2 class="text-warning">ITALIAN SOURCE MUSHROOM </h2>
+        <P class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic quas alias laborum quibusdam, nemo ullam 
+            aperiam minima dolores non ipsa quis! Nisi vel laboriosam fugit deleniti aperiam vero tempora?</P>
+            <H3 class="text-warning">Price:$7.00</H3>
+    </div>
+
+
+
+    <div class="col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/5.png" alt="">
+        <h2 class="text-warning">ITALIAN SOURCE MUSHROOM </h2>
+        <P class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic quas alias laborum quibusdam, nemo ullam 
+            aperiam minima dolores non ipsa quis! Nisi vel laboriosam fugit deleniti aperiam vero tempora?</P>
+            <H3 class="text-warning">Price:$7.00</H3>
+    </div>
+
+
+
+    <div class="col-4">
+        <img class="img-fluid" src="FoodLover/images/foodGallery/6.png" alt="">
+        <h2 class="text-warning">ITALIAN SOURCE MUSHROOM </h2>
+        <P class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic quas alias laborum quibusdam, nemo ullam 
+            aperiam minima dolores non ipsa quis! Nisi vel laboriosam fugit deleniti aperiam vero tempora?</P>
+            <H3 class="text-warning">Price:$7.00</H3>
+    </div>
+
+</div>
+
+
+<div class="row bg-warning  align-items-center ">
+    <div class="col-4">
+        <img class="img-fluid" src="FoodLover/images/enjoy_best_meal.png" alt="">
+
+    </div>
+    <div class="col-6">
+        <h1 class="text-light">Enjoy Best Mea</h1>
+        <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum temporibus velit a repudiandae, quos numquam ipsa est eaque blanditiis tenetur
+             adipisci explicabo iste officiis error, accusamus et eius deserunt sed.</p>
+
+    </div>
+    <div class="col-2">
+
+    </div>
+
+</div>
+
+<div class="row bg-dark text-center pt-5">
+    <div class="col-md-12">
+        <img class="img-fluid" src="FoodLover/images/logo.png" alt="">
+
+    </div>
+
+</div>
+
+<div class="row bg-dark text-center pt-4">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+
+        <a class="px-3 text-decoration-none text-light active" href="#">Home</a>
+        <a class="px-3 text-decoration-none text-light " href="#">About</a>
+        <a class="px-3 text-decoration-none text-light " href="#">Menus</a>
+        <a class="px-3 text-decoration-none text-light " href="#">Offers</a>
+        <a class="px-3 text-decoration-none text-light " href="#">Menus</a>
+        <a class="px-3 text-decoration-none text-light " href="#">Offers</a>
+    </div>
+    <div class="col-2">
+
+    </div>
+
+</div>
+
+<div class="row bg-dark text-center pt-5">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+
+
+    </div>
+    <div class="col-2">
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
 
 
 
